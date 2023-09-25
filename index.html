@@ -4,12 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="cpf.js"></script>
+    <meta http-equiv="Cache-control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <script type="module" src="./generators/index.js"></script>
     <title>Document</title>
 </head>
 <body>
-    <section>
-        cpf:<input type="text" name="" id="cpf" gen-cpf>
+    <section id="campos">
+        cpf:<input type="text" name="" gen-cpf><br>
+        chassi:<input type="text" name="" gen-chassi><br>
+        placa:<input type="text" name="" gen-placa><br>
+        placa2:<input type="text" name="" gen-placa><br>
+        renavam:<input type="text" name="" id="renavam" gen-renavam><br>
+        <div gen-placa>
+            <p>
+                placa 3:<input type="text" name="" id="renavam" ><br>
+            </p>
+        </div>
+        <text-component gen-cpf>
+            <div>
+                <input autocomplete="off" label="teste">
+            </div>
+        </text-component>
     </section>
 </body>
 </html>
